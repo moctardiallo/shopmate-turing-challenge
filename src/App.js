@@ -6,6 +6,7 @@ import AddIcon from "@material-ui/icons/Add";
 import Icon from "@material-ui/core/Icon";
 import DeleteIcon from "@material-ui/icons/Delete";
 import NavigationIcon from "@material-ui/icons/Navigation";
+import { Grid, Col, Row } from "react-styled-flexboxgrid";
 
 const styles = theme => ({
   fab: {
@@ -33,6 +34,13 @@ function App(props) {
       <Fab disabled aria-label="Delete" className={classes.fab}>
         <DeleteIcon />
       </Fab>
+      <Grid>
+        <Row>
+          <Col xs={6} md={3}>
+            Hello, world!
+          </Col>
+        </Row>
+      </Grid>
     </div>
   );
 }
