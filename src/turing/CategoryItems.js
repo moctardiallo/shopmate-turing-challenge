@@ -1,11 +1,12 @@
 import React from "react";
 import MediaCard from "./material-ui/MediaCard";
+import { Grid } from "@material-ui/core";
 
 function CategoryItems() {
   return (
-    <div>
+    <Grid container>
       <MediaCard />
-    </div>
+    </Grid>
   );
 }
 
