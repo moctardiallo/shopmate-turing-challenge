@@ -37,7 +37,8 @@ const items = [
     title: "Chartres Cathedrales",
     image: ImagesShirt2,
     description: "Lizards are a widespread group of squamate ",
-    price: "$15.95"
+    price: "$15.95",
+    old_price: "$15.99"
   },
   {
     title: "Coat of Arms",
@@ -50,13 +51,15 @@ const items = [
     title: "Gallick Cock",
     image: ImagesShirt4,
     description: "Lizards are a widespread group of squamate ",
-    price: "$16.99"
+    price: "$16.99",
+    old_price: "$18.99"
   },
   {
     title: "Marianne",
     image: ImagesShirt5,
     description: "Lizards are a widespread group of squamate ",
-    price: "$14.95"
+    price: "$14.95",
+    old_price: "$15.99"
   },
   {
     title: "Alsace",
@@ -74,7 +77,8 @@ const items = [
     title: "Centeur",
     image: ImagesShirt8,
     description: "Lizards are a widespread group of squamate ",
-    price: "$14.95"
+    price: "$14.95",
+    old_price: "$15.95"
   },
   {
     title: "T-shirt 9",
@@ -92,7 +96,8 @@ const items = [
     title: "T-shirt 11",
     image: ImagesShirt11,
     description: "Lizards are a widespread group of squamate ",
-    price: "$16.50"
+    price: "$16.50",
+    old_price: "$17.50"
   },
   {
     title: "T-shirt 12",
@@ -116,7 +121,8 @@ const items = [
     title: "T-shirt 15",
     image: ImagesShirt15,
     description: "Lizards are a widespread group of squamate ",
-    price: "$14.99"
+    price: "$14.99",
+    old_price: "$15.99"
   },
   {
     title: "T-shirt 16",
