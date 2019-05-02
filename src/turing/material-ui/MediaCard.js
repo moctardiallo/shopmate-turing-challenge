@@ -7,7 +7,6 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardHeader from "@material-ui/core/CardHeader";
 import Typography from "@material-ui/core/Typography";
-import ImagesBag from "../turing-uiux/Zeplin/Images/images-bag.png";
 
 const styles = {
   card: {
@@ -18,19 +17,10 @@ const styles = {
   }
 };
 
-const item = {
-  title: "Bag",
-  image: ImagesBag,
-  description:
-    "Lizards are a widespread group of squamate " +
-    "reptiles, with over 6,000 species, ranging across all " +
-    "continents except Antarctica"
-};
-
 function MediaCard(props) {
-  const { classes } = props;
+  const { classes, item } = props;
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} elevation={1}>
       <CardHeader title={item.title} />
       <CardActionArea>
         <CardMedia
