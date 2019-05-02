@@ -1,10 +1,10 @@
 import React from "react";
-import RecipeReviewCard from "./material-ui/RecipeReviewCard";
+import CardZeplinItem from "./material-ui/CardZeplinItem";
 
 function CategoryItems() {
   return (
     <div>
-      <RecipeReviewCard />
+      <CardZeplinItem />
     </div>
   );
 }

@@ -15,6 +15,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import Bag from "../turing-uiux/Zeplin/Images/images-bag.png";
 
 const styles = {
   card: {
@@ -66,11 +67,7 @@ function RecipeReviewCard(props) {
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
       />
-      <CardMedia
-        className={classes.media}
-        image="/static/images/cards/paella.jpg"
-        title="Paella dish"
-      />
+      <CardMedia className={classes.media} image={Bag} title="Paella dish" />
       <CardContent>
         <Typography component="p">
           This impressive paella is a perfect party dish and a fun meal to cook
