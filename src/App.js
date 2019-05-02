@@ -1,6 +1,6 @@
 import React from "react";
 
-import Shopmate from "./shopmate/Shopmate";
+import Shopmate from "./turing/Shopmate";
 
 function App(props) {
   return (

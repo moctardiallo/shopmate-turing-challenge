@@ -1,5 +1,5 @@
 import React from "react";
-import SearchAppBar from "./turing/SearchAppBar";
+import Logobar from "./Logobar";
 
 const data = {
   searchAppBar: {
@@ -13,7 +13,7 @@ const data = {
 function Shopmate() {
   return (
     <div>
-      <SearchAppBar appbar={data.searchAppBar} />
+      <Logobar appbar={data.searchAppBar} />
     </div>
   );
 }

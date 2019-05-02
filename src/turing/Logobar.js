@@ -1,6 +1,6 @@
 import React from "react";
 import { createMuiTheme } from "@material-ui/core/styles";
-import UseSearchAppBar from "../mui-demos/SearchAppBar";
+import SearchAppBar from "./material-ui/SearchAppBar";
 import Climate from "./Climate";
 
 const design = {
@@ -17,14 +17,14 @@ const design = {
   }
 };
 
-function SearchAppBar(props) {
+function Logobar(props) {
   const { appbar } = props;
   appbar.design = design;
   return (
     <div>
-      <UseSearchAppBar appbar={appbar} />
+      <SearchAppBar appbar={appbar} />
     </div>
   );
 }
 
-export default SearchAppBar;
+export default Logobar;
