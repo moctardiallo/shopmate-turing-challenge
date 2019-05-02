@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core";
 import classnames from "classnames";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
@@ -16,7 +16,7 @@ import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
-const useStyles = makeStyles(theme => ({
+const styles = {
   card: {
     maxWidth: 400
   },
@@ -29,10 +29,10 @@ const useStyles = makeStyles(theme => ({
   },
   expand: {
     transform: "rotate(0deg)",
-    marginLeft: "auto",
-    transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest
-    })
+    marginLeft: "auto"
+    // transition: theme.transitions.create("transform", {
+    //   duration: theme.transitions.duration.shortest
+    // })
   },
   expandOpen: {
     transform: "rotate(180deg)"
@@ -40,10 +40,10 @@ const useStyles = makeStyles(theme => ({
   avatar: {
     backgroundColor: red[500]
   }
-}));
+};
 
-function RecipeReviewCard() {
-  const classes = useStyles();
+function RecipeReviewCard(props) {
+  const classes = { props };
   const [expanded, setExpanded] = React.useState(false);
 
   function handleExpandClick() {
@@ -131,4 +131,4 @@ function RecipeReviewCard() {
   );
 }
 
-export default RecipeReviewCard;
+export default withStyles(styles)(RecipeReviewCard);
