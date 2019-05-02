@@ -7,6 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardHeader from "@material-ui/core/CardHeader";
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 const styles = {
   card: {
@@ -29,6 +31,14 @@ function MediaCard(props) {
           title="Contemplative Reptile"
         />
         <CardContent>
+          <Grid container>
+            <Grid item sm={3} />
+            <Grid item sm={4} />
+            <Grid item sm={3}>
+              <Button color="secondary">{item.price}</Button>
+            </Grid>
+            <Grid item sm={2} />
+          </Grid>
           <Typography component="p">{item.description} </Typography>
         </CardContent>
       </CardActionArea>

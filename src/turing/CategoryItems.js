@@ -30,87 +30,105 @@ const items = [
   {
     title: "Arc Triomphe",
     image: ImagesShirt1,
-    description: "This beautiful and iconic T-shirt will no doubt... "
+    description: "This beautiful and iconic T-shirt will no doubt... ",
+    price: "$14.99"
   },
   {
     title: "Chartres Cathedrales",
     image: ImagesShirt2,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$15.95"
   },
   {
     title: "Coat of Arms",
     image: ImagesShirt3,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.50"
   },
+
   {
     title: "Gallick Cock",
     image: ImagesShirt4,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$16.99"
   },
   {
     title: "Marianne",
     image: ImagesShirt5,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.95"
   },
   {
     title: "Alsace",
     image: ImagesShirt6,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$16.50"
   },
   {
     title: "Apocalypse Tapestry",
     image: ImagesShirt7,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$18.95"
   },
   {
     title: "Centeur",
     image: ImagesShirt8,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.95"
   },
   {
     title: "T-shirt 9",
     image: ImagesShirt9,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.99"
   },
   {
     title: "T-shirt 10",
     image: ImagesShirt10,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$15.95"
   },
   {
     title: "T-shirt 11",
     image: ImagesShirt11,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$16.50"
   },
   {
     title: "T-shirt 12",
     image: ImagesShirt12,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.99"
   },
   {
     title: "T-shirt 13",
     image: ImagesShirt13,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$15.95"
   },
   {
     title: "T-shirt 14",
     image: ImagesShirt14,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.95"
   },
   {
     title: "T-shirt 15",
     image: ImagesShirt15,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.99"
   },
   {
     title: "T-shirt 16",
     image: ImagesShirt16,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$18.95"
   },
   {
     title: "T-shirt 17",
     image: ImagesShirt17,
-    description: "Lizards are a widespread group of squamate "
+    description: "Lizards are a widespread group of squamate ",
+    price: "$14.99"
   }
 ];
 
