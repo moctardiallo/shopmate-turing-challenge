@@ -23,6 +23,9 @@ const styles = theme => ({
   ul: {
     backgroundColor: "inherit",
     padding: 0
+  },
+  category: {
+    textDecoration: "none"
   }
 });
 
@@ -49,7 +52,10 @@ function PinnedSubheaderList(props) {
             </ListSubheader>
             {categories.map(item => (
               <ListItem key={`${sectionId}-${item}`}>
-                <Link to={"/" + item.toLowerCase()}>
+                <Link
+                  to={"/" + item.toLowerCase()}
+                  className={classes.category}
+                >
                   <ListItemText primary={`${item}`} />
                 </Link>
               </ListItem>
