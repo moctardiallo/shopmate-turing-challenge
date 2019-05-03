@@ -6,6 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import { Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const styles = theme => ({
   root: {
@@ -48,7 +49,9 @@ function PinnedSubheaderList(props) {
             </ListSubheader>
             {categories.map(item => (
               <ListItem key={`${sectionId}-${item}`}>
-                <ListItemText primary={`${item}`} />
+                <Link to={"/" + item.toLowerCase()}>
+                  <ListItemText primary={`${item}`} />
+                </Link>
               </ListItem>
             ))}
           </ul>

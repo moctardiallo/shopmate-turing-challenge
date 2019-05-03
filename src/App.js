@@ -2,11 +2,13 @@ import React from "react";
 
 import Shopmate from "./turing/Shopmate";
 
+import { BrowserRouter } from "react-router-dom";
+
 function App(props) {
   return (
-    <div>
+    <BrowserRouter>
       <Shopmate />
-    </div>
+    </BrowserRouter>
   );
 }
 
