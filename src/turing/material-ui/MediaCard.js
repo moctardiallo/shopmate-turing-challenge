@@ -38,7 +38,10 @@ function MediaCard(props) {
   return (
     <MuiThemeProvider theme={theme}>
       <Card className={classes.card} elevation={1}>
-        <CardHeader title={item.title} />
+        <CardHeader
+          title={item.title}
+          titleTypographyProps={{ variant: "body1" }}
+        />
         <CardActionArea>
           <CardMedia
             className={classes.media}
