@@ -24,6 +24,10 @@ const styles = {
   media: {
     height: 140
   },
+  price: {
+    backgroundColor: theme.palette.secondary.main,
+    color: "#ffffff"
+  },
   old_price: {
     textDecoration: "line-through"
   }
@@ -44,15 +48,15 @@ function MediaCard(props) {
           <CardContent>
             <Grid container>
               <Grid item sm={3}>
-                <Button color="secondary">
-                  <Typography className={classes.old_price} color="inherit">
-                    {item.old_price}
-                  </Typography>
+                <Button color="secondary" className={classes.old_price}>
+                  {item.old_price}
                 </Button>
               </Grid>
               <Grid item sm={4} />
               <Grid item sm={3}>
-                <Button color="secondary">{item.price}</Button>
+                <Button size="small" className={classes.price}>
+                  {item.price}
+                </Button>
               </Grid>
               <Grid item sm={2} />
             </Grid>
