@@ -4,6 +4,7 @@ import Categories from "./Categories";
 import CategoriesPagination from "./CategoriesPagination";
 import CategoryItems from "./CategoryItems";
 import { Grid, Paper } from "@material-ui/core";
+import { Route } from "react-router-dom";
 
 const data = {
   searchAppBar: {
@@ -25,7 +26,7 @@ function Shopmate() {
           </Grid>
           <Grid item sm={9} container direction="column" alignItems="center">
             <CategoriesPagination />
-            <CategoryItems />
+            <Route exact path="/" component={CategoryItems} />
           </Grid>
         </Grid>
       </Paper>
