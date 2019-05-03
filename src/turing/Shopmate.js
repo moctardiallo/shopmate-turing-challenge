@@ -19,7 +19,7 @@ function Shopmate() {
   return (
     <div>
       <Logobar appbar={data.searchAppBar} />
-      <Paper>
+      <Paper elevation={0}>
         <Grid container>
           <Grid item sm={3}>
             <Categories />
