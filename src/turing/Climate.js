@@ -1,12 +1,12 @@
 import React from "react";
 import {
-  Typography,
   withStyles,
   Button,
   createMuiTheme,
   MuiThemeProvider
 } from "@material-ui/core";
 import { Row, Col } from "react-styled-flexboxgrid";
+import { Link } from "react-router-dom";
 
 const theme = createMuiTheme({
   typography: {
@@ -17,8 +17,10 @@ const theme = createMuiTheme({
 });
 
 const styles = theme => ({
-  root: {
-    // paddingLeft: "100px"
+  root: {},
+  climate: {
+    textDecoration: "none",
+    color: "#ffffff"
   }
 });
 
@@ -31,7 +33,12 @@ function Climate(props) {
           {climates.map(climate => (
             <Col sm={4}>
               <Button color="inherit">
-                <Typography color="inherit">{climate}</Typography>
+                <Link
+                  to={"/" + climate.toLowerCase()}
+                  className={classes.climate}
+                >
+                  {climate}
+                </Link>
               </Button>
             </Col>
           ))}
