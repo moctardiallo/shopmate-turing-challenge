@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import { withStyles, MuiThemeProvider } from "@material-ui/core/styles";
 import Search from "./Search";
 import Title from "./Title";
-import { Row, Col, Grid } from "react-styled-flexboxgrid";
+import Grid from "@material-ui/core/Grid";
 
 const styles = theme => ({
   root: {
@@ -25,21 +25,19 @@ function SearchAppBar(props) {
       <MuiThemeProvider theme={appbar.design.theme}>
         <AppBar position="static">
           <Toolbar>
-            <Grid>
-              <Row>
-                <Col sm={4}>
-                  <Title title={appbar.title} />
-                </Col>
-                <Col sm={3}>
-                  <appbar.design.middle climates={appbar.climates} />
-                </Col>
-                <Col sm={2}>
-                  <div className={classes.grow} />
-                </Col>
-                <Col sm={3}>
-                  <Search />
-                </Col>
-              </Row>
+            <Grid container>
+              <Grid item sm={4}>
+                <Title title={appbar.title} />
+              </Grid>
+              <Grid item sm={3}>
+                <appbar.design.middle climates={appbar.climates} />
+              </Grid>
+              <Grid item sm={2}>
+                <div className={classes.grow} />
+              </Grid>
+              <Grid item sm={3}>
+                <Search />
+              </Grid>
             </Grid>
           </Toolbar>
         </AppBar>
