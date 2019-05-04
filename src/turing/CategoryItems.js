@@ -31,7 +31,7 @@ const items = [
     title: "Arc Triomphe",
     image: ImagesShirt1,
     description: "This beautiful and iconic T-shirt will no doubt... ",
-    categories: ["french", "regional"],
+    categories: ["", "french", "regional"],
     price: "$14.99"
   },
   {
@@ -39,14 +39,14 @@ const items = [
     image: ImagesShirt2,
     description: "Lizards are a widespread group of squamate ",
     price: "$15.95",
-    categories: ["french", "regional"],
+    categories: ["", "french", "regional", "italian"],
     old_price: "$15.99"
   },
   {
     title: "Coat of Arms",
     image: ImagesShirt3,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["irish", "animal", "regional"],
+    categories: ["", "irish", "seasonal", "regional"],
 
     price: "$14.50"
   },
@@ -56,7 +56,7 @@ const items = [
     image: ImagesShirt4,
     description: "Lizards are a widespread group of squamate ",
     price: "$16.99",
-    categories: ["valentine's", "nature", "animal"],
+    categories: ["", "valentine's", "nature", "seasonal"],
 
     old_price: "$18.99"
   },
@@ -65,7 +65,7 @@ const items = [
     image: ImagesShirt5,
     description: "Lizards are a widespread group of squamate ",
     price: "$14.95",
-    categories: ["french", "valentine's", "nature"],
+    categories: ["", "french", "valentine's", "nature"],
 
     old_price: "$15.99"
   },
@@ -73,7 +73,7 @@ const items = [
     title: "Alsace",
     image: ImagesShirt6,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["french", "animal", "seasonal"],
+    categories: ["", "french", "animal", "nature"],
 
     price: "$16.50"
   },
@@ -81,7 +81,7 @@ const items = [
     title: "Apocalypse Tapestry",
     image: ImagesShirt7,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["animal", "irish", "regional"],
+    categories: ["", "irish", "regional"],
 
     price: "$18.95"
   },
@@ -90,7 +90,7 @@ const items = [
     image: ImagesShirt8,
     description: "Lizards are a widespread group of squamate ",
     price: "$14.95",
-    categories: ["french", "flower", "animal"],
+    categories: ["", "french", "animal", "italian"],
 
     old_price: "$15.95"
   },
@@ -98,7 +98,7 @@ const items = [
     title: "T-shirt 9",
     image: ImagesShirt9,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["irish", "christmas"],
+    categories: ["", "irish", "nature", "animal"],
 
     price: "$14.99"
   },
@@ -106,7 +106,7 @@ const items = [
     title: "T-shirt 10",
     image: ImagesShirt10,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["animal", "christmas"],
+    categories: ["", "animal", "christmas"],
 
     price: "$15.95"
   },
@@ -115,7 +115,7 @@ const items = [
     image: ImagesShirt11,
     description: "Lizards are a widespread group of squamate ",
     price: "$16.50",
-    categories: ["irish"],
+    categories: ["", "irish", "valentine's"],
 
     old_price: "$17.50"
   },
@@ -123,14 +123,14 @@ const items = [
     title: "T-shirt 12",
     image: ImagesShirt12,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["valentine's"],
+    categories: ["", "valentine's", "flower"],
     price: "$14.99"
   },
   {
     title: "T-shirt 13",
     image: ImagesShirt13,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["italian", "christmas"],
+    categories: ["", "italian", "christmas"],
 
     price: "$15.95"
   },
@@ -138,7 +138,7 @@ const items = [
     title: "T-shirt 14",
     image: ImagesShirt14,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["italian", "flower"],
+    categories: ["", "italian", "flower", "christmas"],
 
     price: "$14.95"
   },
@@ -148,27 +148,27 @@ const items = [
     description: "Lizards are a widespread group of squamate ",
     price: "$14.99",
     old_price: "$15.99",
-    categories: ["valentine's", "flower"]
+    categories: ["", "valentine's", "flower", "italian"]
   },
   {
     title: "T-shirt 16",
     image: ImagesShirt16,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["italian", "flower", "christmas"],
+    categories: ["", "italian", "christmas"],
     price: "$18.95"
   },
   {
     title: "T-shirt 17",
     image: ImagesShirt17,
     description: "Lizards are a widespread group of squamate ",
-    categories: ["valentine's", "christmas", "seasonal"],
+    categories: ["", "valentine's", "christmas", "seasonal", "flower"],
     price: "$14.99"
   }
 ];
 
 function CategoryItems(props) {
   const { classes } = props;
-  const category = props.location.pathname.split("/")[1];
+  var category = props.location.pathname.split("/")[1];
   return (
     <Grid className={classes.root} container direction="row" spacing={16}>
       {items
