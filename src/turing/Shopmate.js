@@ -1,4 +1,5 @@
 import React from "react";
+import TopBar from "./TopBar";
 import Logobar from "./Logobar";
 import Categories from "./Categories";
 import CategoriesPagination from "./CategoriesPagination";
@@ -18,6 +19,7 @@ const data = {
 function Shopmate() {
   return (
     <div>
+      <TopBar />
       <Logobar appbar={data.searchAppBar} />
       <Paper elevation={0}>
         <Grid container>
