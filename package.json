@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/moctardiallo/shopmate-turing-challenge",
+  "homepage": "https://moctardiallo.github.io/shopmate-turing-challenge/",
   "eslintConfig": {
     "extends": "react-app"
   },
