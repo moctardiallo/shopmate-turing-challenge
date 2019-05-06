@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "757fbf2736ee467853226e4e6c952761",
+    "revision": "688330eeca6b07c265c1212c8a1bc315",
     "url": "/moctardiallo/shopmate-turing-challenge/index.html"
   },
   {
