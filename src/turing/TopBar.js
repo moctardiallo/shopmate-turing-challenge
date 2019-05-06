@@ -31,8 +31,12 @@ function TopBar() {
           </div>
         </Grid>
         <Grid item sm={3} />
-        <Grid item sm={3}>
-          Daily Sells - Sell - Help & Contact
+        <Grid item container alignItems="center" sm={3}>
+          <span>
+            <span style={{ margin: "10px" }}>Daily Sells</span>
+            <span style={{ margin: "10px" }}>Sell</span>
+            <span style={{ margin: "10px" }}>Help & Contact</span>
+          </span>
         </Grid>
         <Grid item container justify="flex-end" sm={4}>
           <div style={{ marginRight: "10px" }}>
