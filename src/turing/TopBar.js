@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, createMuiTheme, MuiThemeProvider } from "@material-ui/core";
-import FormDialog from "./material-ui/FormDialog";
+import Register from "./Register";
+import SignIn from "./SignIn";
 
 const theme = createMuiTheme({
   typography: {
@@ -18,10 +19,10 @@ function TopBar() {
           <span style={{ marginLeft: "20px" }}>
             <span>Hi!</span>
             <span>
-              <FormDialog title="Sign In" />
+              <SignIn />
             </span>
             or
-            <FormDialog title="Register" />
+            <Register />
           </span>
         </Grid>
         <Grid item container justify="center" alignItems="center" sm={4}>

@@ -7,7 +7,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 
-function FormDialog(props) {
+function SignIn() {
   const [open, setOpen] = React.useState(false);
 
   function handleClickOpen() {
@@ -56,4 +56,4 @@ function FormDialog(props) {
   );
 }
 
-export default FormDialog;
+export default SignIn;
