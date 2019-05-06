@@ -18,7 +18,7 @@ function TopBar() {
   return (
     <MuiThemeProvider theme={theme}>
       <Grid container>
-        <Grid item sm={2}>
+        <Grid item container justify="flex-start" sm={4}>
           <div style={{ marginLeft: "20px" }}>
             Hi!
             <Button small color="secondary" size="small">
@@ -27,18 +27,17 @@ function TopBar() {
             or
             <Button small color="secondary" size="small">
               Register
-            </Button>{" "}
+            </Button>
           </div>
         </Grid>
-        <Grid item sm={3} />
-        <Grid item container alignItems="center" sm={3}>
+        <Grid item container justify="center" alignItems="center" sm={4}>
           <span>
             <span style={{ margin: "10px" }}>Daily Sells</span>
             <span style={{ margin: "10px" }}>Sell</span>
             <span style={{ margin: "10px" }}>Help & Contact</span>
           </span>
         </Grid>
-        <Grid item container justify="flex-end" sm={4}>
+        <Grid item container justify="flex-end" alignItems="center" sm={4}>
           <div style={{ marginRight: "10px" }}>
             Your Bag:{" "}
             <span style={{ color: theme.palette.secondary.main }}>$0.00</span>
