@@ -34,9 +34,11 @@ function TopBar() {
         <Grid item sm={3}>
           Daily Sells - Sell - Help & Contact
         </Grid>
-        <Grid item sm={2} />
-        <Grid item container justify="flex-end" sm={2}>
-          <div style={{ marginRight: "10px" }}>Your Bag: $0.00</div>
+        <Grid item container justify="flex-end" sm={4}>
+          <div style={{ marginRight: "10px" }}>
+            Your Bag:{" "}
+            <span style={{ color: theme.palette.secondary.main }}>$0.00</span>
+          </div>
         </Grid>
       </Grid>
     </MuiThemeProvider>
