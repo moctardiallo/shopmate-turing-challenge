@@ -5,6 +5,7 @@ import {
   createMuiTheme,
   MuiThemeProvider
 } from "@material-ui/core";
+import FormDialog from "./material-ui/FormDialog";
 
 const theme = createMuiTheme({
   typography: {
@@ -19,16 +20,14 @@ function TopBar() {
     <MuiThemeProvider theme={theme}>
       <Grid container>
         <Grid item container justify="flex-start" sm={4}>
-          <div style={{ marginLeft: "20px" }}>
-            Hi!
-            <Button small color="secondary" size="small">
-              SignIn
-            </Button>
+          <span style={{ marginLeft: "20px" }}>
+            <span>Hi!</span>
+            <span>
+              <FormDialog title="Sign In" />
+            </span>
             or
-            <Button small color="secondary" size="small">
-              Register
-            </Button>
-          </div>
+            <FormDialog title="Register" />
+          </span>
         </Grid>
         <Grid item container justify="center" alignItems="center" sm={4}>
           <span>
