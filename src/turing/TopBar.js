@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Grid,
-  Button,
-  createMuiTheme,
-  MuiThemeProvider
-} from "@material-ui/core";
+import { Grid, createMuiTheme, MuiThemeProvider } from "@material-ui/core";
 import FormDialog from "./material-ui/FormDialog";
 
 const theme = createMuiTheme({
