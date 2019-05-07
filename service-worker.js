@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/shopmate-turing-challenge/precache-manifest.947608d5c7b417695276f2ca6991c2cf.js"
+  "/shopmate-turing-challenge/precache-manifest.a3d3edb1e890f580af2481e3930c304b.js"
 );
 
 self.addEventListener('message', (event) => {

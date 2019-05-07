@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df4514f39b9ed65627da7c161180e8e1",
+    "revision": "b104ea9f4aa6a3e88bc32f799ea7c217",
     "url": "/shopmate-turing-challenge/index.html"
   },
   {
-    "revision": "504394e71d4ca9f5d5b1",
+    "revision": "ada085c101bc6dc5c8b4",
     "url": "/shopmate-turing-challenge/static/css/main.795991f2.chunk.css"
   },
   {
-    "revision": "dd0fe44a44ef683719bc",
-    "url": "/shopmate-turing-challenge/static/js/2.ec048139.chunk.js"
+    "revision": "f7f9cdeeb1e4765d4b20",
+    "url": "/shopmate-turing-challenge/static/js/2.e4d76dd0.chunk.js"
   },
   {
-    "revision": "504394e71d4ca9f5d5b1",
-    "url": "/shopmate-turing-challenge/static/js/main.94f38c2d.chunk.js"
+    "revision": "ada085c101bc6dc5c8b4",
+    "url": "/shopmate-turing-challenge/static/js/main.f983a01c.chunk.js"
   },
   {
     "revision": "021392c5a944ab8786fa",
