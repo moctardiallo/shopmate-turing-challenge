@@ -6,9 +6,31 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import {
+  withStyles,
+  createMuiTheme,
+  MuiThemeProvider
+} from "@material-ui/core";
 
-function SignIn() {
+const theme = createMuiTheme({});
+
+const styles = {
+  signIn: {
+    backgroundColor: theme.palette.secondary.main,
+    color: "#ffffff"
+  },
+  signInContainer: {
+    paddingLeft: "0px"
+  },
+
+  register: {
+    color: "#00fbff"
+  }
+};
+
+function SignIn(props) {
   const [open, setOpen] = React.useState(false);
+  const { classes } = props;
 
   function handleClickOpen() {
     setOpen(true);
@@ -28,32 +50,44 @@ function SignIn() {
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+        <DialogTitle id="form-dialog-title">SignIn</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            To subscribe to this website, please enter your email address here.
-            We will send updates occasionally.
-          </DialogContentText>
+          <DialogContentText>All fields are required*</DialogContentText>
           <TextField
             autoFocus
             margin="dense"
             id="name"
-            label="Email Address"
+            label="Email *"
             type="email"
+            fullWidth
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Password *"
+            type="password"
             fullWidth
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Cancel
-          </Button>
-          <Button onClick={handleClose} color="primary">
-            Subscribe
-          </Button>
+          <MuiThemeProvider theme={theme}>
+            <div className={classes.signInContainer}>
+              <Button onClick={handleClose} className={classes.signIn}>
+                Sign In
+              </Button>
+            </div>
+          </MuiThemeProvider>
         </DialogActions>
+        <div style={{ padding: "25px" }}>
+          Don't have an account?{" "}
+          <Button size="small" className={classes.register}>
+            Register
+          </Button>
+        </div>
       </Dialog>
     </span>
   );
 }
 
-export default SignIn;
+export default withStyles(styles)(SignIn);
