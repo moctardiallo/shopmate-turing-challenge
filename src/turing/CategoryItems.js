@@ -14,7 +14,7 @@ const styles = {
 
 function CategoryItems(props) {
   const { classes } = props;
-  var category = props.location.pathname.split("/")[1];
+  var category = props.match.params.category;
   return (
     <Grid className={classes.root} container direction="row" spacing={16}>
       {items

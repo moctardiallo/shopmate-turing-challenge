@@ -29,16 +29,7 @@ function Shopmate() {
           <Grid item sm={9} container direction="column" alignItems="center">
             <CategoriesPagination />
             <Route exact path="/" component={CategoryItems} />
-            <Route path="/french" component={CategoryItems} />
-            <Route path="/italian" component={CategoryItems} />
-            <Route path="/irish" component={CategoryItems} />
-            <Route path="/animal" component={CategoryItems} />
-            <Route path="/flower" component={CategoryItems} />
-            <Route path="/christmas" component={CategoryItems} />
-            <Route path="/valentine's" component={CategoryItems} />
-            <Route path="/regional" component={CategoryItems} />
-            <Route path="/seasonal" component={CategoryItems} />
-            <Route path="/nature" component={CategoryItems} />
+            <Route path="/:category" component={CategoryItems} />
           </Grid>
         </Grid>
       </Paper>
