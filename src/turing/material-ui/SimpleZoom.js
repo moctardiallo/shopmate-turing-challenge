@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Switch from "@material-ui/core/Switch";
 import Paper from "@material-ui/core/Paper";
 import Zoom from "@material-ui/core/Zoom";
+import { Button } from "@material-ui/core";
 
 const styles = theme => ({
   root: {
@@ -31,7 +32,7 @@ class SimpleZoom extends React.Component {
     checked: false
   };
 
-  handleChange = () => {
+  handleClick = () => {
     this.setState(state => ({ checked: !state.checked }));
   };
 
@@ -41,33 +42,11 @@ class SimpleZoom extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Switch
-          checked={checked}
-          onChange={this.handleChange}
-          aria-label="Collapse"
-        />
+        <Button onClick={this.handleClick}>Zoom</Button>
         <div className={classes.container}>
           <Zoom in={checked}>
             <Paper elevation={4} className={classes.paper}>
-              <svg className={classes.svg}>
-                <polygon
-                  points="0,100 50,00, 100,100"
-                  className={classes.polygon}
-                />
-              </svg>
-            </Paper>
-          </Zoom>
-          <Zoom
-            in={checked}
-            style={{ transitionDelay: checked ? "500ms" : "0ms" }}
-          >
-            <Paper elevation={4} className={classes.paper}>
-              <svg className={classes.svg}>
-                <polygon
-                  points="0,100 50,00, 100,100"
-                  className={classes.polygon}
-                />
-              </svg>
+              Category
             </Paper>
           </Zoom>
         </div>
