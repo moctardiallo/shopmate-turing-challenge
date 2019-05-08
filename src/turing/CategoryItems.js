@@ -39,6 +39,7 @@ function CategoryItems(props) {
               <MediaCard item={item} />
             </Button>
             <SimpleDialog
+              item={item}
               selectedValue={selectedValue}
               open={open}
               onClose={handleClose}

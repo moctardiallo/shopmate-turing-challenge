@@ -5,7 +5,7 @@ import Dialog from "@material-ui/core/Dialog";
 import Item from "../Item";
 
 function SimpleDialog(props) {
-  const { onClose, selectedValue, ...other } = props;
+  const { onClose, selectedValue, item, ...other } = props;
 
   function handleClose() {
     onClose(selectedValue);
@@ -18,7 +18,7 @@ function SimpleDialog(props) {
       {...other}
     >
       <DialogTitle id="simple-dialog-title">Item</DialogTitle>
-      <Item />
+      <Item item={item} />
     </Dialog>
   );
 }
