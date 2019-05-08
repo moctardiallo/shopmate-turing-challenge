@@ -34,10 +34,18 @@ const styles = {
 };
 
 function MediaCard(props) {
-  const { classes, item } = props;
+  const {
+    classes,
+    item,
+    handleclickOpen,
+    open,
+    setOpen,
+    selectedValue,
+    setSelectedValue
+  } = props;
   return (
     <MuiThemeProvider theme={theme}>
-      <Card className={classes.card} elevation={1}>
+      <Card onClick={handleclickOpen} className={classes.card} elevation={1}>
         <CardHeader
           title={item.title}
           titleTypographyProps={{ variant: "body1" }}

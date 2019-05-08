@@ -35,9 +35,14 @@ function CategoryItems(props) {
         .filter(item => item.categories.includes(category))
         .map(item => (
           <Grid item sm={3}>
-            <Button onClick={handleClickOpen}>
-              <MediaCard item={item} />
-            </Button>
+            <MediaCard
+              handleClickOpen={handleClickOpen}
+              open={open}
+              setOpen={setOpen}
+              selectedValue={selectedValue}
+              setSelectedValue={setSelectedValue}
+              item={item}
+            />
             <SimpleDialog
               selectedValue={selectedValue}
               open={open}
