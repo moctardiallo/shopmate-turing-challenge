@@ -34,17 +34,19 @@ function CategoryItems(props) {
       {items
         .filter(item => item.categories.includes(category))
         .map(item => (
-          <Grid item sm={3}>
-            <Button onClick={handleClickOpen}>
-              <MediaCard item={item} />
-            </Button>
-            <SimpleDialog
-              item={item}
-              selectedValue={selectedValue}
-              open={open}
-              onClose={handleClose}
-            />
-          </Grid>
+          <li key={`${item.title}`}>
+            <Grid item sm={3}>
+              <Button onClick={handleClickOpen}>
+                <MediaCard item={item} />
+              </Button>
+              <SimpleDialog
+                item={item}
+                selectedValue={selectedValue}
+                open={open}
+                onClose={handleClose}
+              />
+            </Grid>
+          </li>
         ))}
     </Grid>
   );
