@@ -31,16 +31,18 @@ function Climate(props) {
       <div className={classes.root}>
         <Row>
           {climates.map(climate => (
-            <Col sm={4}>
-              <Button color="inherit">
-                <Link
-                  to={"/" + climate.toLowerCase()}
-                  className={classes.climate}
-                >
-                  {climate}
-                </Link>
-              </Button>
-            </Col>
+            <li key={`${climate}`}>
+              <Col sm={4}>
+                <Button color="inherit">
+                  <Link
+                    to={"/" + climate.toLowerCase()}
+                    className={classes.climate}
+                  >
+                    {climate}
+                  </Link>
+                </Button>
+              </Col>
+            </li>
           ))}
         </Row>
       </div>
